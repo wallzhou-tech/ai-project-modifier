@@ -70,6 +70,13 @@ AI_PROJECTS = {
         "category": "browser",
         "install": "npm install crawlee"
     },
+    "firecrawl": {
+        "repo": "mendableai/firecrawl",
+        "desc": "AI网页数据抓取API",
+        "stars": 92879,
+        "category": "browser",
+        "install": "pip install firecrawl"
+    },
     
     # AI记忆/知识
     "mem0": {
@@ -78,6 +85,13 @@ AI_PROJECTS = {
         "stars": 49793,
         "category": "memory",
         "install": "pip install mem0ai"
+    },
+    "ragflow": {
+        "repo": "infiniflow/ragflow",
+        "desc": "深度RAG引擎",
+        "stars": 74987,
+        "category": "memory",
+        "install": "git clone"
     },
     
     # Agent编排
@@ -95,6 +109,57 @@ AI_PROJECTS = {
         "category": "orchestration",
         "install": "pip install pyautogen"
     },
+    "langgraph": {
+        "repo": "langchain-ai/langgraph",
+        "desc": "构建有状态的多Actor应用",
+        "stars": 28000,
+        "category": "orchestration",
+        "install": "pip install langgraph"
+    },
+    "dify": {
+        "repo": "langgenius/dify",
+        "desc": "Agent工作流开发平台",
+        "stars": 132790,
+        "category": "orchestration",
+        "install": "git clone"
+    },
+    "langflow": {
+        "repo": "langflow-ai/langflow",
+        "desc": "可视化AI工作流",
+        "stars": 145651,
+        "category": "orchestration",
+        "install": "pip install langflow"
+    },
+    
+    # LLM/Transformer模型
+    "transformers": {
+        "repo": "huggingface/transformers",
+        "desc": "🤗 Transformers模型库",
+        "stars": 157802,
+        "category": "llm",
+        "install": "pip install transformers"
+    },
+    "vllm": {
+        "repo": "vllm-project/vllm",
+        "desc": "高效LLM推理服务",
+        "stars": 73075,
+        "category": "llm",
+        "install": "pip install vllm"
+    },
+    "ollama": {
+        "repo": "ollama/ollama",
+        "desc": "本地运行大模型",
+        "stars": 120000,
+        "category": "llm",
+        "install": "curl -fsSL https://ollama.com/install.sh | sh"
+    },
+    "litgpt": {
+        "repo": "Lightning-AI/litgpt",
+        "desc": "高性能开源大模型",
+        "stars": 28000,
+        "category": "llm",
+        "install": "pip install litgpt"
+    },
     
     # CLI工具
     "cli-anything": {
@@ -110,6 +175,27 @@ AI_PROJECTS = {
         "stars": 97689,
         "category": "cli",
         "install": "npm install -g @gemini/cli"
+    },
+    "opencode": {
+        "repo": "anomalyco/opencode",
+        "desc": "AI代码编辑助手",
+        "stars": 122021,
+        "category": "cli",
+        "install": "npm install -g opencode"
+    },
+    "cline": {
+        "repo": "cline/cline",
+        "desc": "IDE中的自主编程Agent",
+        "stars": 58964,
+        "category": "cli",
+        "install": "npm install -g cline"
+    },
+    "daytona": {
+        "repo": "daytonaio/daytona",
+        "desc": "AI开发基础设施",
+        "stars": 64958,
+        "category": "cli",
+        "install": "brew install daytona"
     },
     
     # RAG/知识库
@@ -127,14 +213,93 @@ AI_PROJECTS = {
         "category": "rag",
         "install": "npm install flowise"
     },
+    "llamaindex": {
+        "repo": "run-llama/llama_index",
+        "desc": "LLM数据框架",
+        "stars": 45000,
+        "category": "rag",
+        "install": "pip install llama-index"
+    },
+    "qdrant": {
+        "repo": "qdrant/qdrant",
+        "desc": "向量搜索引擎",
+        "stars": 32000,
+        "category": "rag",
+        "install": "docker pull qdrant/qdrant"
+    },
     
     # 开发工具
-    "opencode": {
-        "repo": "anthropics/opencode",
-        "desc": "AI代码编辑助手",
-        "stars": 15000,
+    "open-webui": {
+        "repo": "open-webui/open-webui",
+        "desc": "AI聊天界面",
+        "stars": 127154,
         "category": "dev",
-        "install": "npm install -g opencode"
+        "install": "git clone"
+    },
+    "comfyui": {
+        "repo": "Comfy-Org/ComfyUI",
+        "desc": "模块化扩散模型GUI",
+        "stars": 105827,
+        "category": "dev",
+        "install": "git clone"
+    },
+    "autogpt": {
+        "repo": "Significant-Gravitas/AutoGPT",
+        "desc": "自主AI Agent",
+        "stars": 182449,
+        "category": "dev",
+        "install": "git clone"
+    },
+    "lobehub": {
+        "repo": "lobehub/lobe-chat",
+        "desc": "现代化AI聊天框架",
+        "stars": 73641,
+        "category": "dev",
+        "install": "npx create-lobe-chat"
+    },
+    "nextchat": {
+        "repo": "ChatGPTNextWeb/ChatGPT-Next-Web",
+        "desc": "轻量级AI助手",
+        "stars": 87494,
+        "category": "dev",
+        "install": "npx create-next-chat"
+    },
+    "one-api": {
+        "repo": "justsong/one-api",
+        "desc": "OpenAI接口管理",
+        "stars": 28000,
+        "category": "dev",
+        "install": "docker run -d --name one-api -p 3000:3000 -v /root/.openclaw/workspace/ai-project-modifier/data:/data justsong/one-api"
+    },
+    
+    # MCP服务器
+    "mcp": {
+        "repo": "modelcontextprotocol/spec",
+        "desc": "MCP协议规范",
+        "stars": 33000,
+        "category": "mcp",
+        "install": "npm install @modelcontextprotocol/sdk"
+    },
+    "mcp-servers": {
+        "repo": "anthropics/mcp",
+        "desc": "官方MCP服务器集合",
+        "stars": 93317,
+        "category": "mcp",
+        "install": "git clone"
+    },
+    "n8n": {
+        "repo": "n8n-io/n8n",
+        "desc": "工作流自动化",
+        "stars": 98000,
+        "category": "mcp",
+        "install": "docker run -d --name n8n -p 5678:5678 n8nio/n8n"
+    },
+    "claude-code": {
+        "repo": "anthropics/claude-code",
+        "desc": "Claude代码编写工具",
+        "stars": 45000,
+        "category": "mcp",
+        "install": "npm install -g @anthropic-ai/claude-code"
     },
 }
 
@@ -142,9 +307,11 @@ CATEGORIES = {
     "browser": "🌐 浏览器自动化",
     "memory": "💾 AI记忆/知识",
     "orchestration": "🔧 Agent编排",
+    "llm": "🧠 LLM/模型",
     "cli": "⌨️ CLI工具",
     "rag": "📚 RAG/知识库",
     "dev": "🛠️ 开发工具",
+    "mcp": "🔌 MCP/自动化",
 }
 
 
@@ -153,7 +320,7 @@ def print_banner():
     banner = f"""
 {BOLD}{BLUE}
 ╔═══════════════════════════════════════════════════════╗
-║          🤖 AI 项目改造器 v1.0                         ║
+║          🤖 AI 项目改造器 v2.0                         ║
 ║     把热门开源项目改造成你的CLI工具箱！                 ║
 ╚═══════════════════════════════════════════════════════╝
 {RESET}
@@ -173,26 +340,167 @@ def get_trending_projects(language="python", limit=10) -> List[Dict]:
     return []
 
 
-def search_projects(query: str):
-    """搜索项目"""
-    url = f"https://api.github.com/search/repositories?q={query}&sort=stars&order=desc&per_page=10"
+def search_projects(query: str, language: Optional[str] = None, min_stars: int = 0, sort_by: str = "stars"):
+    """搜索项目 - 支持过滤和排序"""
+    params = [query]
+    if language:
+        params.append(f"language:{language}")
+    if min_stars > 0:
+        params.append(f"stars:>={min_stars}")
+    
+    search_query = "+".join(params)
+    url = f"https://api.github.com/search/repositories?q={search_query}&sort={sort_by}&order=desc&per_page=15"
+    
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=10)
+        resp = requests.get(url, headers=HEADERS, timeout=15)
         if resp.status_code == 200:
             items = resp.json().get("items", [])
-            print(f"\n{BLUE}🔍 搜索 '{query}' 结果:{RESET}\n")
+            print(f"\n{BLUE}🔍 搜索 '{query}' 结果 ({len(items)}个):{RESET}\n")
+            if language:
+                print(f"   {YELLOW}语言过滤: {language}{RESET}")
+            if min_stars > 0:
+                print(f"   {YELLOW}最低stars: {min_stars}{RESET}")
+            print()
+            
             for i, item in enumerate(items, 1):
                 stars = item.get('stargazers_count', 0)
                 lang = item.get('language', 'N/A')
-                desc = item.get('description', 'No description')[:50]
+                desc = item.get('description', 'No description')[:60]
+                topics = item.get('topics', [])[:3]
+                
                 print(f"  {i}. {BOLD}{item['full_name']}{RESET}")
-                print(f"     {desc}...")
-                print(f"     ⭐ {stars:,} | {lang}")
+                print(f"     📝 {desc}")
+                print(f"     ⭐ {stars:,} | {lang} | 🕐 {item.get('updated_at', '')[:10]}")
+                if topics:
+                    print(f"     🏷️ {', '.join(topics)}")
                 print()
+        elif resp.status_code == 422:
+            print(f"{RED}❌ 搜索语法错误{RESET}")
         else:
-            print(f"{RED}❌ 搜索失败{RESET}")
+            print(f"{RED}❌ 搜索失败: {resp.status_code}{RESET}")
     except Exception as e:
         print(f"{RED}❌ 搜索出错: {e}{RESET}")
+
+
+def compare_projects(project_names: List[str]):
+    """项目对比功能"""
+    projects = []
+    for name in project_names:
+        if name in AI_PROJECTS:
+            projects.append((name, AI_PROJECTS[name]))
+        else:
+            print(f"{YELLOW}⚠️ 未知项目: {name}{RESET}")
+    
+    if not projects:
+        print(f"{RED}没有可对比的项目{RESET}")
+        return
+    
+    print(f"\n{BOLD}{BLUE}📊 项目对比{RESET}\n")
+    print("=" * 80)
+    
+    header = f"{'项目名':<20} {'描述':<30} {'Stars':<10} {'分类':<15}"
+    print(header)
+    print("-" * 80)
+    
+    for name, info in projects:
+        desc = info['desc'][:28] + ".." if len(info['desc']) > 30 else info['desc']
+        cat = CATEGORIES.get(info['category'], info['category'])
+        print(f"{name:<20} {desc:<30} {info['stars']:>8,} {cat:<15}")
+    
+    print("-" * 80)
+    
+    if len(projects) >= 2:
+        max_stars = max(p[1]['stars'] for p in projects)
+        print(f"\n{GREEN}🏆 最受欢迎: {[p[0] for p in projects if p[1]['stars'] == max_stars][0]}{RESET}")
+    
+    print()
+
+
+def deploy_project(project_name: str, method: str = "docker"):
+    """自动部署项目"""
+    if project_name not in AI_PROJECTS:
+        print(f"{RED}❌ 未知项目: {project_name}{RESET}")
+        return
+    
+    info = AI_PROJECTS[project_name]
+    repo = info["repo"]
+    
+    print(f"\n{BLUE}🚀 自动部署: {project_name}{RESET}\n")
+    print(f"   仓库: {repo}")
+    print(f"   方式: {method}")
+    
+    if method == "docker":
+        port = input(f"{YELLOW}请输入端口 (默认8080): {RESET}").strip() or "8080"
+        container_name = f"ai-{project_name}"
+        
+        print(f"\n{GREEN}📦 拉取Docker镜像...{RESET}")
+        
+        result = subprocess.run(
+            ["docker", "run", "-d", f"--name={container_name}", f"-p={port}:8080", 
+             "--restart=unless-stopped", f"ghcr.io/{repo.lower()}/latest"],
+            capture_output=True, text=True
+        )
+        
+        if result.returncode == 0:
+            print(f"{GREEN}✅ 部署成功!{RESET}")
+            print(f"   访问地址: http://localhost:{port}")
+            print(f"   容器名: {container_name}")
+        else:
+            print(f"{YELLOW}⚠️ 自动部署失败，尝试克隆部署...{RESET}")
+            deploy_from_source(project_name, port)
+    
+    elif method == "source":
+        port = input(f"{YELLOW}请输入端口 (默认8080): {RESET}").strip() or "8080"
+        deploy_from_source(project_name, port)
+    
+    else:
+        print(f"{RED}❌ 未知部署方式: {method}{RESET}")
+        print(f"可用方式: docker, source")
+
+
+def deploy_from_source(project_name: str, port: str):
+    """从源码部署"""
+    info = AI_PROJECTS[project_name]
+    repo = info["repo"]
+    target_dir = f"/root/.openclaw/workspace/deployed/{project_name}"
+    
+    print(f"\n{BLUE}📥 克隆项目...{RESET}")
+    os.makedirs(target_dir, exist_ok=True)
+    
+    result = subprocess.run(
+        ["git", "clone", f"https://github.com/{repo}.git", target_dir],
+        capture_output=True, text=True
+    )
+    
+    if result.returncode == 0:
+        print(f"{GREEN}✅ 克隆成功!{RESET}")
+        
+        if os.path.exists(os.path.join(target_dir, "Dockerfile")):
+            print(f"{BLUE}🐳 构建Docker镜像...{RESET}")
+            img_name = f"ai-{project_name}:latest"
+            build_result = subprocess.run(
+                ["docker", "build", "-t", img_name, target_dir],
+                capture_output=True, text=True
+            )
+            if build_result.returncode == 0:
+                container_name = f"ai-{project_name}"
+                subprocess.run(["docker", "rm", "-f", container_name], capture_output=True)
+                run_result = subprocess.run(
+                    ["docker", "run", "-d", f"--name={container_name}", f"-p={port}:8080",
+                     "--restart=unless-stopped", img_name],
+                    capture_output=True, text=True
+                )
+                if run_result.returncode == 0:
+                    print(f"{GREEN}✅ 部署成功!{RESET}")
+                    print(f"   访问地址: http://localhost:{port}")
+                else:
+                    print(f"{RED}❌ 启动失败: {run_result.stderr}{RESET}")
+            else:
+                print(f"{RED}❌ 构建失败: {build_result.stderr}{RESET}")
+        else:
+            print(f"{YELLOW}⚠️ 未找到Dockerfile，请手动配置运行{RESET}")
+    else:
+        print(f"{RED}❌ 克隆失败: {result.stderr}{RESET}")
 
 
 def list_supported(category: Optional[str] = None):
@@ -295,8 +603,10 @@ def interactive_mode():
   2. 🔍 搜索GitHub项目
   3. 📥 克隆项目到本地
   4. ⚡ 一键安装项目
-  5. 🔥 今日热门项目
-  6. 🚪 退出
+  5. 🚀 自动部署项目
+  6. 📊 项目对比
+  7. 🔥 今日热门项目
+  8. 🚪 退出
 
 """)
     
@@ -314,7 +624,10 @@ def interactive_mode():
     elif choice == "2":
         query = input("输入搜索关键词: ").strip()
         if query:
-            search_projects(query)
+            lang = input("语言过滤 (python/typescript/go/java, 回车跳过): ").strip()
+            min_stars = input("最低stars (回车跳过): ").strip()
+            min_stars = int(min_stars) if min_stars.isdigit() else 0
+            search_projects(query, language=lang if lang else None, min_stars=min_stars)
     
     elif choice == "3":
         project = input("输入项目名称: ").strip()
@@ -327,10 +640,23 @@ def interactive_mode():
             install_project(project)
     
     elif choice == "5":
-        projects = get_trending_projects()
-        print(f"\n{BOLD}🔥 今日GitHub热门 (Python):{RESET}\n")
+        project = input("输入项目名称: ").strip()
+        if project:
+            method = input("部署方式 (docker/source, 默认docker): ").strip() or "docker"
+            deploy_project(project, method)
+    
+    elif choice == "6":
+        print(f"\n{BOLD}输入要对比的项目名 (空格分隔, 最多5个):{RESET}")
+        projects = input(f"{BLUE}> {RESET}").strip().split()[:5]
+        if projects:
+            compare_projects(projects)
+    
+    elif choice == "7":
+        lang_choice = input("语言 (python/typescript/go, 回车默认python): ").strip() or "python"
+        projects = get_trending_projects(language=lang_choice)
+        print(f"\n{BOLD}🔥 今日GitHub热门 ({lang_choice}):{RESET}\n")
         for i, p in enumerate(projects, 1):
-            print(f"  {i}. {p['full_name']} ⭐ {p['stargazers_count']:,}")
+            print(f"  {i}. {p['full_name']} ⭐ {p['stargazers_count']:,} | {p.get('language', 'N/A')}")
 
 
 def main():
@@ -341,16 +667,25 @@ def main():
 示例:
   python3 main.py --list              查看支持的项目
   python3 main.py --search AI agent    搜索项目
+  python3 main.py --search ai --lang python --min-stars 1000
   python3 main.py --clone browser-use  克隆项目
   python3 main.py --install mem0       一键安装
+  python3 main.py --deploy flowise     自动部署
+  python3 main.py --compare mem0 crewai autogen
   python3 main.py --interactive        交互模式
         """
     )
     parser.add_argument("--list", "-l", action="store_true", help="列出已支持的项目")
     parser.add_argument("--search", "-s", type=str, help="搜索GitHub项目")
+    parser.add_argument("--lang", type=str, help="搜索语言过滤 (python/typescript/go/java)")
+    parser.add_argument("--min-stars", type=int, default=0, help="最低stars数")
     parser.add_argument("--clone", "-c", type=str, help="克隆项目到本地")
     parser.add_argument("--install", "-i", type=str, help="一键安装项目")
+    parser.add_argument("--deploy", "-d", type=str, help="自动部署项目")
+    parser.add_argument("--deploy-method", type=str, default="docker", choices=["docker", "source"], help="部署方式")
+    parser.add_argument("--compare", nargs="+", help="对比多个项目")
     parser.add_argument("--trending", "-t", action="store_true", help="获取今日热门")
+    parser.add_argument("--trending-lang", type=str, default="python", help="热门项目语言")
     parser.add_argument("--interactive", "-int", action="store_true", help="交互模式")
     parser.add_argument("--category", type=str, help="按分类查看项目")
     
@@ -361,16 +696,20 @@ def main():
     elif args.list:
         list_supported(args.category)
     elif args.search:
-        search_projects(args.search)
+        search_projects(args.search, language=args.lang, min_stars=args.min_stars)
     elif args.trending:
-        projects = get_trending_projects()
-        print(f"\n{BOLD}🔥 今日GitHub热门 (Python):{RESET}\n")
+        projects = get_trending_projects(language=args.trending_lang)
+        print(f"\n{BOLD}🔥 今日GitHub热门 ({args.trending_lang}):{RESET}\n")
         for i, p in enumerate(projects, 1):
             print(f"  {i}. {p['full_name']} ⭐ {p['stargazers_count']:,} | {p.get('language', 'N/A')}")
     elif args.clone:
         clone_project(args.clone)
     elif args.install:
         install_project(args.install)
+    elif args.deploy:
+        deploy_project(args.deploy, args.deploy_method)
+    elif args.compare:
+        compare_projects(args.compare)
     else:
         print_banner()
         print(parser.format_help())
